@@ -28,7 +28,8 @@ function getClickLength(p1, p2) {
 function showTip (length) {
     if (length < 20) {
         tip.textContent = 'КЛАД НАЙДЕН!';
-        tip.color = 'purple';
+        tip.style.color = 'purple';
+
     } else if (length < 40) {
         tip.textContent = 'ГОРЯЧО!';
         tip.style.color = 'red';
@@ -40,7 +41,7 @@ function showTip (length) {
         tip.style.color = 'lightblue';
     } else {
         tip.textContent = 'Зима близко!';
-        tip.style.color = 'blue';
+        tip.style.color = 'blue' ; 
     }
 }
 
@@ -61,3 +62,4 @@ map.addEventListener("click", (event) => {
   }
 
 });
+  
