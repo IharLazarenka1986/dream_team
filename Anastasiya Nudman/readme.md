@@ -1,1 +1,0 @@
-# Anastasiya Nudman's folder

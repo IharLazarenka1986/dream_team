@@ -1,1 +1,0 @@
-# Anastasiia Filippova's folder
