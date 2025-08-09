@@ -1,0 +1,3 @@
+[submodule "pizza-proect"]
+	path = pizza-proect
+	url = https://github.com/IharLazarenka1986/pizza-proect.git
