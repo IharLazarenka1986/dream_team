@@ -1,0 +1,98 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0; 
+  margin-bottom: 40px;
+}
+
+.btnMain,
+.btnSecond,
+.btnThird,
+.btnFourth {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #DDDDDD;
+  border-radius: 6px;
+  background-color: #fffff1;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  flex-shrink: 0; 
+}
+
+.btnMain,
+.btnSecond {
+  width: 118px;
+  height: 36px;
+  font-size: 16px;
+  line-height: 36px;
+  color: #8B8B8B;
+}
+
+.btnSecond {
+  color: #424436;
+}
+
+.btnThird {
+  width: 205px;
+  height: 36px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px; 
+  color: #424436; 
+}
+
+.btnFourth {
+  flex-grow: 1; 
+  height: 36px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #424436;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.line {
+  width: 16px;
+  height: 1px;
+  background-color: #DDDDDD;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .line {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .btnMain,
+  .btnSecond {
+    width: 100px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+  }
+  .btnThird {
+    width: 150px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+  }
+  .btnFourth {
+    width: 150px; 
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+  }
+}

@@ -1,0 +1,258 @@
+:global(body) {
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+:global(a) {
+  text-decoration: none;
+}
+
+.blockHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 1440px;
+  height: 128px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #DDDDDD;
+  background-color: #fffff1;
+  z-index: 998;
+}
+
+.blockLogo {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  width: 70px;
+  height: 70px;
+  background-color: #92A134;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+.containerDayNight {
+  position: absolute;
+  width: 60px;
+  height: 32px;
+  left: 130px;
+  top: 48px;
+  background-color: #707266;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.toggleCircle {
+  position: absolute;
+  top: 2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: left 0.3s ease;
+}
+
+.toggleIcon {
+  position: absolute;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease, left 0.3s ease;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.blockHeartEmpty {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+
+.blockIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.emptyHeart {
+  cursor: pointer;
+  width: 44px;
+  height: 38px;
+}
+
+.cartEmpty {
+  cursor: pointer;
+  width: 44px;
+  height: 48px;
+}
+
+.iconWrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.counter {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  background-color: green;
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
+  border-radius: 5px;
+  background-color: #92A134;
+  width: 151px;
+  height: 32px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navLink {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: #424436;
+}
+
+.navLink:hover {
+  color: #92A134;
+}
+
+@media (max-width: 1024px) {
+  .blockHeader {
+    width: 95%;
+    height: auto;
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .blockLogo {
+    position: static;
+    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .containerDayNight {
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  .blockHeartEmpty {
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  .blockIcons {
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .discount {
+    width: 100%;
+    font-size: 16px;
+    height: 28px;
+  }
+
+  .navigation {
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navLink {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blockHeader {
+    padding: 10px 15px;
+  }
+
+  .navLink {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .discount {
+    font-size: 14px;
+  }
+
+  .navLink {
+    font-size: 14px;
+  }
+
+  .blockLogo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo {
+    width: 28px;
+    height: 28px;
+  }
+}

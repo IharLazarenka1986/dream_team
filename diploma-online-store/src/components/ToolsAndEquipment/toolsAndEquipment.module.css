@@ -1,0 +1,101 @@
+/* src/pages/toolsAndEquipment.module.css */
+
+.toolsWrapper {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.titleCategories {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  color: #424436;
+  margin: 0 0 40px 0;
+}
+
+.allProductsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: flex-start;
+}
+
+.saleCard {
+  width: 316px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.imgCard {
+  width: 100%;
+  height: 284px;
+  object-fit: cover;
+}
+
+.infoPrice {
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.priceRow {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 40px;
+  color: #424436;
+}
+
+.oldPrice {
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: line-through;
+  color: #8B8B8B;
+}
+
+@media (max-width: 1024px) {
+  .titleCategories {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .allProductsGrid {
+    justify-content: center;
+  }
+
+  .saleCard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .titleCategories {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .allProductsGrid {
+    gap: 16px;
+  }
+
+  .saleCard {
+    width: 100%;
+  }
+
+  .imgCard {
+    height: auto;
+  }
+}

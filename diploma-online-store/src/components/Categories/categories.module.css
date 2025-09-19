@@ -1,0 +1,333 @@
+.categoriesWrapper {
+  position: relative;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 128px;
+}
+
+
+.blockBtnMainCategories {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+  height: 36px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.btnMainPage,
+.btnCategories {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  width: 118px;
+  height: 36px;
+  border: 1px solid #DDDDDD;
+  border-radius: 6px;
+  background-color: #fffff1;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 126%;
+  white-space: nowrap;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.btnMainPage {
+  color: #8B8B8B;
+}
+
+.btnCategories {
+  color: #424436;
+}
+
+
+.line {
+  position: absolute;
+  top: 50%;
+  left: 118px;
+  right: 118px;
+  border-top: 1px solid #DDDDDD;
+  z-index: 1;
+}
+
+.titleCategories {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  color: #424436;
+  margin: 0 0 40px 0;
+  transition: font-size 0.3s ease, margin 0.3s ease;
+}
+
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.blockCard {
+  background-color: #FFFFF1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 248px;
+  height: 392px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    max-width 0.3s ease, height 0.3s ease, width 0.3s ease;
+}
+
+.blockCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.fertilizerImg {
+  max-width: 248px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  transition: max-width 0.3s ease, height 0.3s ease, width 0.3s ease;
+}
+
+.blockCardTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  width: 100%;
+}
+
+.cardTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: #424436;
+  cursor: pointer;
+  transition: font-size 0.3s ease, padding 0.3s ease;
+}
+
+
+.allProductsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: flex-start;
+}
+
+
+@media (max-width: 1200px) {
+  .titleCategories {
+    font-size: 56px;
+  }
+
+  .blockCard {
+    max-width: 230px;
+    height: 368px;
+  }
+
+  .fertilizerImg {
+    max-width: 230px;
+    height: 326px;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+  }
+
+  .cardsContainer {
+    gap: 26px;
+  }
+
+  .blockBtnMainCategories {
+    gap: 16px;
+  }
+
+  .line {
+    left: 100px;
+    right: 100px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .blockBtnMainCategories {
+    gap: 12px;
+  }
+
+  .line {
+    left: 100px;
+    right: 100px;
+  }
+
+  .titleCategories {
+    font-size: 48px;
+  }
+
+  .blockCard {
+    max-width: 220px;
+    height: 352px;
+  }
+
+  .fertilizerImg {
+    max-width: 220px;
+    height: 316px;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+  }
+
+  .cardsContainer {
+    gap: 24px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .cardsContainer {
+    gap: 20px;
+  }
+
+  .blockCard {
+    max-width: none;
+    width: calc(50% - 15px);
+    height: auto;
+  }
+
+  .fertilizerImg {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .blockCardTitle {
+    height: 56px;
+  }
+
+  .cardTitle {
+    font-size: 17px;
+    padding: 0 6px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .blockBtnMainCategories {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .titleCategories {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .cardsContainer {
+    gap: 16px;
+  }
+
+  .blockCard {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .fertilizerImg {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .blockCardTitle {
+    height: auto;
+    padding: 12px 10px;
+  }
+
+  .cardTitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categoriesWrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 96px;
+  }
+
+  .titleCategories {
+    font-size: 28px;
+  }
+
+  .blockBtnMainCategories {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .btnMainPage,
+  .btnCategories {
+    padding: 6px 12px;
+    font-size: 14px;
+    width: auto;
+  }
+
+  .cardsContainer {
+    gap: 14px;
+  }
+
+  .blockCard {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .fertilizerImg {
+    height: auto;
+  }
+
+  .cardTitle {
+    font-size: 15px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .titleCategories {
+    font-size: 24px;
+  }
+
+  .btnMainPage,
+  .btnCategories {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .cardTitle {
+    font-size: 14px;
+  }
+
+  .blockCard {
+    padding-bottom: 8px;
+  }
+}

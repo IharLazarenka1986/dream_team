@@ -1,0 +1,159 @@
+.blockNavigationPriceDiscountSorted {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; 
+}
+
+/* === Price === */
+.blockPrice {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 36px;
+}
+
+.titlePrice,
+.titleDiscountItems,
+.titleSorted {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  color: #424436;
+}
+
+.inputFrom, .inputTo {
+  width: 112px;
+  height: 36px;
+  border: 1px solid #DDDDDD;
+  border-radius: 6px;
+  padding-left: 8px;
+}
+
+/* === Discount === */
+.blockDiscount {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 36px;
+}
+
+.checkbox {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+}
+
+
+.blockSorted {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 36px;
+}
+
+.sortHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8px;
+  width: 200px;
+  height: 36px;
+  border: 1px solid #DDDDDD;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #424436;
+}
+
+.arrow {
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+/* dropdown */
+.sortList {
+  position: absolute;
+  top: 50px;
+  left: 80px;
+  width: 200px;
+  background: #FFFFF1;
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 10;
+  border: 1px solid #DDDDDD;
+}
+
+.sortItem {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  color: #8B8B8B;
+}
+
+.sortItem:hover {
+  color: #424436;
+}
+
+.active {
+  font-weight: 600;
+  color: #424436;
+}
+
+
+@media (max-width: 1024px) {
+  .blockNavigationPriceDiscountSorted {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blockNavigationPriceDiscountSorted {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .blockPrice,
+  .blockDiscount,
+  .blockSorted {
+    width: 100%;
+  }
+
+  .sortHeader,
+  .sortList {
+    width: 100%;
+    left: 0; 
+  }
+}
+
+@media (max-width: 480px) {
+  .titlePrice,
+  .titleDiscountItems,
+  .titleSorted {
+    font-size: 18px;
+  }
+
+  .inputFrom, .inputTo {
+    width: 100%;
+    max-width: 140px;
+  }
+
+  .sortHeader {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}

@@ -1,0 +1,79 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(40, 40, 40, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+
+.blockOrderConfirmations {
+  background: #92A234;
+  border-radius: 12px;
+  padding: 32px;
+  width: 548px;
+  min-height: 236px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  z-index: 1000;
+  animation: scaleIn 0.4s ease forwards;
+}
+
+
+.titleOrder {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 40px;
+  color: #FFFFF1;
+  text-align: center;
+}
+
+.btnCloseDescription {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  background: none;
+  border: none;
+  font-size: 42px;
+  color: #FFFFF1;
+  cursor: pointer;
+  padding: 0;
+}
+
+.orderDescription {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFFFF1;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

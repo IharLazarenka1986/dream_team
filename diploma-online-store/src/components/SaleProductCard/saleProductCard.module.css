@@ -1,0 +1,259 @@
+.blockSale {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1360px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px 16px;
+}
+
+.topSale {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.titleSale {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  color: #424436;
+}
+
+.lineSale {
+  flex-grow: 1;
+  height: 0;
+  border: 1px solid #DDDDDD;
+}
+
+.btnSale {
+  width: 97px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFF1;
+  border: 1px solid #DDDDDD;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #8B8B8B;
+  cursor: pointer;
+}
+
+.blockSaleCard {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 32px;
+  width: 100%;
+  max-width: 1360px;
+  justify-content: center;
+}
+
+.saleCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 316px;
+  background: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 12px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.imgWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.imgCard {
+  width: 100%;
+  height: 284px;
+  display: block;
+  border-bottom: 1px solid #DDDDDD;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+}
+
+/* 💚 Скидка */
+.discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 68px;
+  height: 34px;
+  background: #92A234;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  z-index: 2;
+}
+
+/* Иконки корзины и сердечка */
+.icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px; /* Расстояние между корзиной и сердечком */
+  z-index: 3;
+}
+
+.iconBasket,
+.iconHeart {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+/* Кнопка Add To Cart */
+.addToCartBtn {
+  display: none; 
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 32px;
+gap: 10px;
+position: absolute;
+width: 284px;
+height: 58px;
+left: 16px;
+top: 210px;
+background: #92A234;
+border-radius: 6px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 130%;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+cursor: pointer;
+
+
+}
+
+.addToCartBtn:hover {
+  background-color: #424436;
+  color: white;
+}
+
+/* Класс для показа кнопки */
+.showAddButtonWrapper .addToCartBtn {
+  display: block;
+}
+
+.infoPrice {
+  width: 316px;
+  height: 118px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px 16px;
+  box-sizing: border-box;
+}
+
+.titleCard {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: #424436;
+  margin: 0;
+  cursor: pointer;
+}
+
+.priceRow {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.price {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 110%;
+  color: #424436;
+  margin: 0;
+}
+
+.oldPrice {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  text-decoration-line: line-through;
+  color: #8B8B8B;
+  margin: 0;
+}
+
+/* Планшеты */
+@media (max-width: 1024px) {
+  .titleSale {
+    font-size: 48px;
+  }
+
+  .btnSale {
+    width: 80px;
+    font-size: 14px;
+  }
+}
+
+/* Смартфоны */
+@media (max-width: 768px) {
+  .blockSaleCard {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .saleCard {
+    width: 100%;
+  }
+
+  .imgCard {
+    width: 100%;
+    height: auto;
+  }
+
+  .titleSale {
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .btnSale {
+    width: 100%;
+    max-width: 97px;
+    font-size: 14px;
+  }
+
+  .topSale {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .lineSale {
+    width: 100%;
+  }
+}

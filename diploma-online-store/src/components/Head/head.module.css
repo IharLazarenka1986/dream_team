@@ -1,0 +1,106 @@
+.blockHead {
+  background: url(../../assets/img.jpg) center/cover no-repeat;
+  max-width: 1440px;
+  height: 600px;
+  position: relative;
+  margin: 128px auto 0 auto;
+}
+
+.blockTitle {
+  position: absolute;
+  top: 50px;
+  left: 45px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Title {
+  font-weight: 700;
+  font-size: 5vw;
+  line-height: 1.1;
+}
+
+.blockBtnCheckOut {
+  position: absolute;
+  top: 54%;
+  left: 4%;
+  transform: translateY(-50%);
+}
+
+.btnCheckOut {
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: #92A234;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.btnCheckOut:hover {
+  background: #7f8f2c;
+}
+
+@media (max-width: 1024px) {
+  .blockHead {
+    height: 500px;
+  }
+
+  .Title {
+    font-size: 6vw;
+    top: 40px;
+    left: 30px;
+  }
+
+  .blockBtnCheckOut {
+    left: 5%;
+  }
+
+  .btnCheckOut {
+    padding: 12px 32px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blockHead {
+    height: 400px;
+  }
+
+  .Title {
+    font-size: 7vw;
+    top: 35px;
+    left: 20px;
+  }
+
+  .blockBtnCheckOut {
+    left: 4%;
+  }
+
+  .btnCheckOut {
+    padding: 10px 24px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blockHead {
+    height: 300px;
+  }
+
+  .Title {
+    font-size: 9vw;
+    top: 20px;
+    left: 15px;
+  }
+
+  .blockBtnCheckOut {
+    left: 4%;
+  }
+
+  .btnCheckOut {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+.blockContact {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 0;
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.titleContact {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  color: #424436;
+  margin: 0;
+}
+
+.blockContactData {
+  display: grid;
+  grid-template-columns: 780px 548px;
+  grid-template-rows: auto;
+  gap: 32px;
+  width: 100%;
+  max-width: 1360px;
+  box-sizing: border-box;
+}
+
+.contactBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  background: #F2F6D3;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.contactHeading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #8B8B8B;
+  margin: 0;
+}
+
+.contactText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 44px;
+  color: #424436;
+  margin: 0;
+  text-decoration: none;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 16px;
+}
+
+.navigatorMap {
+  width: 100%;
+  max-width: 1360px;
+  height: 350px;
+  border-radius: 12px;
+  border: none;
+}
+
+
+@media (max-width: 1200px) {
+  .blockContactData {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .titleContact {
+    font-size: 48px;
+  }
+
+  .contactText {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .titleContact {
+    font-size: 40px;
+  }
+
+  .contactText {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
